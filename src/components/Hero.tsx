@@ -59,7 +59,7 @@ export function Hero() {
           <motion.img 
             animate={{ y: [0, -15, 0] }}
             transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" }}
-            src="https://static.nike.com/a/images/w_1280,q_auto,f_auto/fd6d91e6-65aa-4895-a2d5-7e9d2db5f7ef/alphafly-3-herren-strassenlaufschuh-fur-wettkampfe-SvF5rm.png" 
+            src="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/ca3cd774-463b-49f9-b068-ca3804d692ef/AIR+ZOOM+ALPHAFLY+NEXT%25+3.png" 
             alt="Nike Alphafly 3"
             className="w-full h-auto drop-shadow-[0_20px_40px_rgba(0,0,0,0.2)]"
           />
