@@ -1,0 +1,8 @@
+{
+  "name": "Nike Running Store",
+  "description": "Modern, responsive premium E-Commerce store for Nike Running Collection.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

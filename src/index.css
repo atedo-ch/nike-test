@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-nike-black: #111111;
+  --color-nike-grey: #F5F5F5;
+  --color-nike-orange: #FF6B00;
+  --font-sans: "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-nike-black);
+  background-color: white;
+  -webkit-font-smoothing: antialiased;
+}
+
+@layer utilities {
+  .nav-link {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    transition: color 0.2s;
+  }
+  .nav-link:hover {
+    color: var(--color-nike-orange);
+  }
+
+  .hero-title {
+    font-size: clamp(3rem, 8vw, 82px);
+    line-height: 0.9;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -0.04em;
+  }
+
+  .btn-primary {
+    background: var(--color-nike-black);
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 12px 32px;
+    border-radius: 9999px;
+    transition: all 0.2s;
+  }
+  .btn-primary:active {
+    transform: scale(0.98);
+  }
+
+  .btn-secondary {
+    border: 2px solid #ddd;
+    color: var(--color-nike-black);
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 12px 32px;
+    border-radius: 9999px;
+    transition: all 0.2s;
+  }
+  .btn-secondary:hover {
+    border-color: var(--color-nike-black);
+  }
+  .btn-secondary:active {
+    transform: scale(0.98);
+  }
+
+  .stat-card {
+    border-left: 2px solid var(--color-nike-orange);
+    padding-left: 12px;
+  }
+
+  .product-card-wrap {
+    background: var(--color-nike-grey);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+  }
+  .product-card-wrap:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+  }
+
+  .marquee-content {
+    display: flex;
+    animation: marquee 30s linear infinite;
+  }
+
+  .marquee-content.reverse {
+    animation-direction: reverse;
+  }
+
+  .marquee-container:hover .marquee-content {
+    animation-play-state: paused;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
